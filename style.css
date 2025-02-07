@@ -1,0 +1,126 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Ensures the background stays fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("VoidBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(3px); /* Applies the blur effect to the background */
+    z-index: -1; /* Ensures the background stays behind the content */
+    pointer-events: none; 
+}
+.home-container {
+    width: 100%;
+    max-width: 500px; /* Adjust width for mobile */
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+        justify-content: center; /* Center the links */
+        position: fixed; 
+        z-index: 1000;
+      
+    }
+    
+    .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .topnav a.active {
+        background-color: #891deea2;
+        color: white;
+    }
+    
+    #content {
+        padding: 20px;
+    }
+
+p.a{
+    
+    position: fixed
+    
+
+}
+
+
+
+img.a{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+img.b{
+    transition: transform 0.1s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+img.b:hover{
+    transform: translate(10px, 10px);
+   
+}
+img.Facebook {
+    transition: transform 0.1s ease-in-out; 
+}
+img.Facebook:hover{
+    transform: translate(5px, 5px);
+}
+img.Instagram{
+    transition: transform 0.1s ease-in-out; 
+}
+img.Instagram:hover{
+    transform: translate(5px, 5px);
+}
+
+img.LinkVideo{
+    border: 5px solid #555;
+}
+
+
+#voidImage:hover {
+    content: url('VoidsaidHi.png'); 
+}
+video{
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+    transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+    width: 200px;
+    height: 220px;
+    margin-bottom: 10px;
+}
+video:hover {
+    filter: blur(0px); /* Remove blur on hover */
+    transform: scale(1.2);
+}
