@@ -18,28 +18,28 @@ const pages = {
         <br><br>
         <h1> Video samples </h1>
         </center>
-        <video id="birthday" muted>
+        <video id="birthday" controls>
             <source src="Birthday - Funeral.mp4" type="video/mp4">
             Your browser does not support the video tag.    
         </video>
-        <video id="SololevelingMV">
+        <video id="SololevelingMV" controls>
             <source src="Solo leveling MV.mp4" type="video/mp4">
             Your browser does not support the video tag.  
         </video>
-        <video id="itGetsWorse">
+        <video id="itGetsWorse" controls >
             <source src="it gets worse.mp4" type="video/mp4">
             Your browser does not support the video tag.  
         </video>
-        <video id="Painless">
+        <video id="Painless" controls >
             <source src="Painless.mp4" type="video/mp4">
             Your browser does not support the video tag.  
         </video>
-        <video id="Somebody">
+        <video id="Somebody" controls >
             <source src="Somebody.mp4" type="video/mp4">
             Your browser does not support the video tag.  
         </video>
         
-        <video id="iwantus">
+        <video id="iwantus" controls >
             <source src="i want us by Adinpuffy x Ishida x Bookie x Zenon.mp4" type="video/mp4">
             Your browser does not support the video tag.  
         </video>
@@ -111,27 +111,10 @@ function updateActiveLink(activePage) {
 window.onload = () => navigate('home');
 
 
-// hovering play and hovering out pause
-document.querySelectorAll("video").forEach(video => {
-    // Ensure videos are initially muted to allow autoplay
-    video.muted = true;
+document.getElementById("birthday").addEventListener("mouseover", function() {
+    this.play();
+});
 
-    // Play the video when hovered, unmute it as well
-    video.addEventListener("mouseenter", () => {
-        console.log("Hovered over video: ", video.id);
-        video.muted = false;  // Unmute when hovered
-        video.play().then(() => {
-            console.log("Playing video: ", video.id);
-        }).catch((err) => {
-            console.error("Error playing video: ", video.id, err);  // Error handling
-        });
-    });
-
-    // Pause the video and mute it again when mouse leaves
-    video.addEventListener("mouseleave", () => {
-        console.log("Mouse left video: ", video.id);
-        video.pause();  // Pause video
-        video.currentTime = 0;  // Optionally reset to the start
-        video.muted = true;  // Mute it when paused
-    });
+document.getElementById("birthday").addEventListener("mouseleave",function() {
+    this.pause();
 });

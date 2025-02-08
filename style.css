@@ -123,4 +123,5 @@ video{
 video:hover {
     filter: blur(0px); /* Remove blur on hover */
     transform: scale(1.2);
+    
 }
