@@ -18,6 +18,7 @@ const pages = {
         <br><br>
         <h1> Video samples </h1>
         </center>
+        <center>
         <video id="birthday" controls>
             <source src="Birthday - Funeral.mp4" type="video/mp4">
             Your browser does not support the video tag.    
@@ -26,6 +27,8 @@ const pages = {
             <source src="Solo leveling MV.mp4" type="video/mp4">
             Your browser does not support the video tag.  
         </video>
+        <br>
+        <br>
         <video id="itGetsWorse" controls >
             <source src="it gets worse.mp4" type="video/mp4">
             Your browser does not support the video tag.  
@@ -34,6 +37,8 @@ const pages = {
             <source src="Painless.mp4" type="video/mp4">
             Your browser does not support the video tag.  
         </video>
+        <br>
+        <br>
         <video id="Somebody" controls >
             <source src="Somebody.mp4" type="video/mp4">
             Your browser does not support the video tag.  
@@ -43,11 +48,16 @@ const pages = {
             <source src="i want us by Adinpuffy x Ishida x Bookie x Zenon.mp4" type="video/mp4">
             Your browser does not support the video tag.  
         </video>
-
-
-        
-       
-        
+        <video id="clarity" controls >
+            <source src="Clarity.mp4" type="video/mp4">
+            Your browser does not support the video tag.  
+        </video>
+        <video id="oneday" controls>
+            <source src="Paper Planes - One Day With Subtitle.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </center>
+  
     `,
     
   

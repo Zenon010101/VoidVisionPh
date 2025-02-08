@@ -116,8 +116,8 @@ video{
     filter: blur(5px);
     transition: filter 0.3s ease-in-out;
     transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
-    width: 200px;
-    height: 220px;
+    width: 500px;
+    height: 500px;
     margin-bottom: 10px;
 }
 video:hover {
